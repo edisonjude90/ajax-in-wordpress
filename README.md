@@ -6,8 +6,6 @@ I have created a simple plugin that makes a ajax call...
 
 note : Please make sure if you have jquery included, as it uses jquery ajax to make the call
 
-/***************************************************************************************************/
-
 
 PHP Code in simple-ajax-plugin.php
 
