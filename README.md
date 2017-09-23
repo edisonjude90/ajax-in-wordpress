@@ -8,17 +8,18 @@ note : Please make sure if you have jquery included, as it uses jquery ajax to m
 
 /***************************************************************************************************/
 
-/*
+
 PHP Code in simple-ajax-plugin.php
-wp_ajax_nopriv_ is used for actions performed by users who are not logged-in 
-wp_ajax_ is used for actions performed by users who are logged-in
+
+* wp_ajax_nopriv_ is used for actions performed by users who are not logged-in 
+* wp_ajax_ is used for actions performed by users who are logged-in
 
 usage :
 ```
 wp_ajax_nopriv_[name of the action]
 wp_ajax_[name of the action]
 ```
-*/
+
 ```
 add_action( 'wp_ajax_nopriv_simple_ajax_call', 'simple_ajax_call' );  
 add_action( 'wp_ajax_simple_ajax_call', 'simple_ajax_call' );
@@ -28,8 +29,6 @@ function simple_ajax_call() {
 	die();
 }
 ```
-
-/* 
 js code in test_ajax.js we are making a call to the ajax function in the plugin.
 where we pass the data value with the function to be actioned....
 ```
@@ -38,7 +37,7 @@ data : {
 	id : id
 },
 ```
-*/
+
 ```
 (function($){
 	console.log($);
