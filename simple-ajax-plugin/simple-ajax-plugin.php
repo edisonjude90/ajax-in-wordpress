@@ -4,6 +4,8 @@
  * Description: Make a ajax call 
  * Version: 1.0.0
  * Author: Edison
+ * 
+ * 
  */
 
 add_action( 'wp_enqueue_scripts', 'ajax_test_enqueue_scripts' );
